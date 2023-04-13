@@ -5,9 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css"/>
-    <title>Document</title>
+    <title>Weather App</title>
 </head>
-<body>
+<body class="main-body">
+    <header>
+        <h1>Weather App</h1>
+    </header>
+    <main>
+    <!-- Search Section -->
+        <div class="side-box">
+            <h3 class="search">Search by City</h3>
+            <form class="city-search">
+                <input id="cityId" type="text" autofocus="true"/>
+                <button type="submit" class="btn">Search City</button>
+                
+            </form>   
+            <div id="cityBtnList"></div>  
+        </div>
+    <!-- Search Results -->
+        <div id="city-rep">
+            <h2>City: <span id="city"></span></h2>
+            <h3>Temperature: <span id ="temp"></span></h3>
+            <h3>Climate: <span id="climate"></span></h3>
+            <h3>Wind Speed: <span id="wind-spd"></span></h3>
+            <div id="climate-info"></div>
+        </div></main>
+        <div id="city-list">
+            <div>
+                <h3>Temperature: <span id ="temp-card-1"></span></h3>
+                <h3>Climate: <span id="climate-card-1"></span></h3>
+                <h3>Wind Speed: <span id="wind-spd-card-1"></span></h3>
+            </div>
+            <div>
+                <h3>Temperature: <span id ="temp-card-2"></span></h3>
+                <h3>Climate: <span id="climate-card-2"></span></h3>
+                <h3>Wind Speed: <span id="wind-spd-card-2"></span></h3>
+            </div>
+            <div>
+                <h3>Temperature: <span id ="temp-card-3"></span></h3>
+                <h3>Climate: <span id="climate-card-3"></span></h3>
+                <h3>Wind Speed: <span id="wind-spd-card-3"></span></h3>
+            </div>
+            <div>
+                <h3>Temperature: <span id ="temp-card-4"></span></h3>
+                <h3>Climate: <span id="climate-card-4"></span></h3>
+                <h3>Wind Speed: <span id="wind-spd-card-4"></span></h3>
+            </div>
+            <div>
+                <h3>Temperature: <span id ="temp-card-5"></span></h3>
+                <h3>Climate: <span id="climate-card-5"></span></h3>
+                <h3>Wind Speed: <span id="wind-spd-card-5"></span></h3>
+            </div>                
+        </div>
+    
+    <!-- Script Section -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+    ></script>
     <script src="./assets/script.js"></script>
 </body>
 </html>
